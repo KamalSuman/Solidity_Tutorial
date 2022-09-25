@@ -9,7 +9,7 @@ pragma solidity >=0.8.7 <0.9.0;   // tells that any version between the range is
 
 // Below is the declaration of contract i.e. how we declare contract
 
-contract simplestorage{
+contract SimpleStorage{
     uint public favoritenumber;     // public keyword make it public and it acts as function which shows the value of favoritenumber 
 
     function store(uint _favoritenumber) public{    // we are declaring function which is setting the value of favoritenumber
