@@ -58,4 +58,28 @@ contract FundMe{  // fund me contract
         _; // it represents the whole code
     }
 
+    // Explainer from: https://solidity-by-example.org/fallback/
+    // Ether is sent to contract
+    //      is msg.data empty?
+    //          /   \ 
+    //         yes  no
+    //         /     \
+    //    receive()?  fallback() 
+    //     /   \ 
+    //   yes   no
+    //  /        \
+    //receive()  fallback()
+
+    // Basically fallback and receive functions are used to import mopney i.e. ETH to contract if you don't have any fund function but you won't be able to store the address of funder
+    // difference between them is receive function only used when no data is passed in call data otherwise fallback triggers
+    // In our case we have called function inside this recieve and fallback to store the data of funders also. 
+    fallback() external payable {
+        fund();
+    }
+
+    receive() external payable {
+        fund();
+    }
+
+
 }
