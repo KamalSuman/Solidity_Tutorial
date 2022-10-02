@@ -72,7 +72,7 @@ contract FundMe{  // fund me contract
 
     // Basically fallback and receive functions are used to import mopney i.e. ETH to contract if you don't have any fund function but you won't be able to store the address of funder
     // difference between them is receive function only used when no data is passed in call data otherwise fallback triggers
-    // In our case we have called function inside this recieve and fallback to store the data of funders also. 
+    // In our case we have called function inside this recieve and fallback to store the data of funders also.pwd\p 
     fallback() external payable {
         fund();
     }

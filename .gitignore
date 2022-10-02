@@ -1,0 +1,14 @@
+hardhat-simple-storage-fcc/node_modules
+hardhat-simple-storage-fcc/.env
+hardhat-simple-storage-fcc/coverage
+hardhat-simple-storage-fcc/coverage.json
+hardhat-simple-storage-fcc/typechain
+hardhat-simple-storage-fcc/typechain-types
+
+#Hardhat files
+hardhat-simple-storage-fcc/cache
+hardhat-simple-storage-fcc/artifacts
+hardhat-simple-storage-fcc/gas-report.txt
+hardhat-simple-storage-fcc/coverage.json
+hardhat-simple-storage-fcc/coverages
+
